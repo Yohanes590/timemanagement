@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="sty/day.css">
+	<link rel="icon" href="../img/icon.ico">
+	<title>Day, Week, Month ,Planer Page</title>
+</head>
+<body onload="read_data()">
+
+
+
+<div class="daily">
+
+<div class="nav">	
+<h2>Daily Planer Web</h2>
+</div>
+
+
+
+<div class="endi">
+	
+	<h2>Dashboard / Planer</h2>
+	<h3>Goto back</h3>
+
+</div>
+
+
+
+<div class="inps">
+	
+
+<h2>Daily <span> Plan</span> <span id="res">Monday</span></h2><br><br><br>
+
+
+
+<label>Your Daily Plan</label><label style="margin-left:100px;">Discription</label><br>
+
+
+
+	<textarea placeholder="Insert Today Plan" id="plan"></textarea>
+	<textarea placeholder="Description" id="dis"></textarea><br><br>
+	<label>How Many Hour It Take</label><label style="margin-left:100px;">Persent Progress</label><br>
+	<input type="number" name="hour" placeholder="How Many Hour It Take" id="take">
+	<input type="number" name="hour" placeholder="Persent Progress" id="pers"><br>
+	<br>
+	<label>Your Achievement</label>
+	<label style="margin-left: 200px;">Date</label><label style="margin-left: 200px;">Day</label><br>
+	<select id="ach">
+		<option>Achieve</option>
+		<option>Not Achieve</option>
+	</select>
+
+ <input type="date" name="date" id="date">	
+ <select id="day" onclick="show_plans()">
+		<option>Monday</option>
+		<option>Tuesday</option>
+		<option>Wednesday</option>
+		<option>Thursday</option>
+		<option>Friday</option>
+		<option>Saturday</option>
+		<option>Sunday</option>
+	</select>
+</div>
+<br>
+
+<button onclick="daily()">Save Daily Progress</button>
+
+</div>
+
+
+
+<div class="week">
+	<h2>Week<span>ly Progress</span></h2>
+<input type="number" name="status" placeholder="Status Persent">
+<input type="number" name="status" placeholder="How Many Month Takes">
+<select>
+	<option>Passed</option>
+	<option>Not Passed</option>
+</select><br><br><br>
+<button onclick="week()">Save Weekly Progress</button>
+
+</div>
+
+
+<div class="month">
+	<h2>Mon<span>thly Progress</span></h2>
+	<textarea placeholder="End Of This Month I Achieve"></textarea><br>
+	<input type="month" name="month">
+	<input type="number" name="tekes" placeholder="How Many Month Takes">
+<select>
+	<option>Passed</option>
+	<option>Not Passed</option>
+</select><br><br>
+<button>Save Monthly Progress</button>
+</div>
+
+
+
+<div class="year">
+	
+<h2><span>On</span> This <span>Year</span></h2>
+<br>
+
+<textarea placeholder="On This Year"></textarea><br>
+<input type="number" name="year" placeholder="How Many Years It Take">
+<input type="month" name="year">
+<select>
+	<option>Passed</option>
+	<option>Not Passed</option>
+</select><br><br><br>
+
+<button>Save Yearly Progress</button>
+</div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="scrip/java.js"></script>
+
+
+
+</body>
+</html>

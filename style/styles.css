@@ -1,0 +1,194 @@
+*{
+	font-family: "Kanit", sans-serif;
+  	font-weight: 300;
+  	font-style: normal;
+  	padding: 0px;
+  	margin: 0px;
+  	scroll-behavior: smooth;
+}
+
+body{
+	background:linear-gradient(to right,#181818,#3e3e3e);
+	color:white;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:linear-gradient(to right,#181818,#3e3e3e);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: magenta;
+}
+
+.nav_bar{
+	width:100%;
+	height:70px;
+	display: flex;
+	position: absolute;
+	top: -100px;
+	transition: 0.4s ease-in-out;
+	background: white;
+}
+.nav_bar .logo{
+	padding-left: 30px;
+	padding-top: 20px;
+}
+.nav_bar .button{
+	padding-top: 30px;
+	position: absolute;
+	right: 30px;
+}
+.nav_bar .button a{
+	margin-left: 20px;
+	color:white;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 0.4s ease-in-out;
+}
+.nav_bar .button a:hover{
+	color:magenta;
+}
+.nav_bar .button button{
+	margin-left: 20px;
+	width: 80px;
+	height: 30px;
+	border:2px solid magenta;
+	background: magenta;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px magenta;
+	color: white;
+}
+span{
+	color: magenta;
+	text-shadow: 0px 0px 30px magenta;
+	text-decoration: underline;
+}
+hr{
+	width: 80%;
+	margin: auto;
+}
+.home_page{
+	margin-top: 240px;
+	margin-left: 50px;
+	text-align: center;
+	transition: 0.4s ease-in-out;
+	opacity: 0;
+}
+.home_page h1{
+	font-size: 47px;
+	border-left: 3px solid magenta;
+	border-right:3px solid magenta;
+}
+.about h1{
+	margin-left: 50px;
+}
+.about{
+	margin-top: 200px;
+	padding-left:50px;
+}
+.about .flex{
+	display: flex;
+}
+.about .mess{
+	font-size: 16px;
+	background: transparent;
+	border-left: 3px solid magenta;
+	transition: 0.4s ease-in-out;
+	margin-left: -100px;
+	opacity:0.3;
+}
+.about  .mess2{
+	font-size: 16px;
+	background: transparent;
+	border-left: 3px solid magenta;
+	transition: 0.4s ease-in-out;
+	opacity:0.3;
+}
+.about .cards{
+	display: flex;
+	margin-top: 100px;
+}
+.about .cards .card{
+	width: 300px;
+	height: 300px;
+	border:2px solid magenta;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0px 0px 30px magenta;
+	border-radius: 10px;
+	transition: 0.3s ease-in-out;
+	background: linear-gradient(cyan,cyan);
+	background-repeat: no-repeat;
+	background-position:0px 400px;
+	color: white;
+}
+.about .cards .card:hover{
+	box-shadow: 0px 0px 30px cyan;
+	border-color: cyan;
+	color: black;
+	background-position:0px 0px;
+}
+.footer{
+	margin-top: 200px;
+	width: 100%;
+	height: 500px;
+	background: linear-gradient(to left,#121212,#565656);
+}
+.footer .flx{
+	display: flex;
+}
+.footer .flx .elments{
+	margin-top: 150px;
+	margin-left:100px;	
+}
+.footer .flx .elments2{
+	margin-top: 150px;
+	margin-left:100px;	
+	display: flex;
+}
+.footer .flx .elments a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	transition: 0.1s ease-in-out;
+}
+.footer .flx .elments a:hover{
+	color: magenta;
+	font-size:22px;
+}
+.footer .flx .elments2 .svg{
+	margin-top: 50px;
+	border:1px solid cyan;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+	color: cyan;
+	margin-left: 30px;
+}
+.footer .flx .elments2 .svg:hover{
+	background: cyan;
+	color: magenta;
+}
+.footer .flx .elments2 .svg svg{
+   margin-left:7px;
+   margin-top: 7px;
+	transition: 0.1s ease-in-out;
+}
